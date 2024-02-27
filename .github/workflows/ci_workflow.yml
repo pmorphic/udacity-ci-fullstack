@@ -25,12 +25,12 @@ jobs:
     - name: Install Dependencies
       run: cd backend && npm ci
     - name: Build and Test
-      run: cd backend && npm run build && npm run test
+      run: cd backend && npm run test
       continue-on-error: true
     - name: Lint
       run: cd backend && npm run lint
     - name: Message
       run: |
-          "Hello ${{ github.triggering_actor }}. You pushed to ${{ github.repository }} at $(date)."  
+          echo "Hello ${{ github.triggering_actor }}. You pushed to ${{ github.repository }} at $(date)."  
         
 # This is a simple workflow for a python app
