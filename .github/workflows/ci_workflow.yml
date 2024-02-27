@@ -31,6 +31,6 @@ jobs:
       run: cd backend && npm run lint
     - name: Message
       run: |
-          "Hello ${{ github.triggering_actor }}. You pushed to ${{ github.repository }} at $(date)."."  
+          "Hello ${{ github.triggering_actor }}. You pushed to ${{ github.repository }} at $(date)."  
         
 # This is a simple workflow for a python app
